@@ -18,6 +18,8 @@
 		073C19532006891100F7816E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073C19512006891100F7816E /* LaunchScreen.storyboard */; };
 		073C195E2006891200F7816E /* ComtradeGramFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C195D2006891200F7816E /* ComtradeGramFinalTests.swift */; };
 		073C19692006891200F7816E /* ComtradeGramFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C19682006891200F7816E /* ComtradeGramFinalUITests.swift */; };
+		C903283C201674A200F210D0 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903283B201674A200F210D0 /* PhotoTableViewCell.swift */; };
+		C903283E201674BD00F210D0 /* ProfileImgApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C903283D201674BD00F210D0 /* ProfileImgApiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		073C19642006891200F7816E /* ComtradeGramFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComtradeGramFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073C19682006891200F7816E /* ComtradeGramFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComtradeGramFinalUITests.swift; sourceTree = "<group>"; };
 		073C196A2006891200F7816E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C903283B201674A200F210D0 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoTableViewCell.swift; path = ../../../Desktop/CTG/CTG/PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		C903283D201674BD00F210D0 /* ProfileImgApiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileImgApiViewController.swift; path = ../../../Desktop/CTG/CTG/ProfileImgApiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 				073C19452006891100F7816E /* AppDelegate.swift */,
 				073C19472006891100F7816E /* ViewController.swift */,
 				071E5FD420165A23001B8FE6 /* HomePageTableViewCell.swift */,
+				C903283B201674A200F210D0 /* PhotoTableViewCell.swift */,
 				071E5FD320165A22001B8FE6 /* HomePageViewController.swift */,
+				C903283D201674BD00F210D0 /* ProfileImgApiViewController.swift */,
 				071E5FD220165A22001B8FE6 /* Post.swift */,
 				073C19492006891100F7816E /* Main.storyboard */,
 				073C194F2006891100F7816E /* Assets.xcassets */,
@@ -271,6 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C903283C201674A200F210D0 /* PhotoTableViewCell.swift in Sources */,
+				C903283E201674BD00F210D0 /* ProfileImgApiViewController.swift in Sources */,
 				073C19482006891100F7816E /* ViewController.swift in Sources */,
 				071E5FD720165A23001B8FE6 /* HomePageTableViewCell.swift in Sources */,
 				073C194E2006891100F7816E /* ComtradeGramFinal.xcdatamodeld in Sources */,
