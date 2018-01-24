@@ -34,6 +34,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>InstagramRedirectURI</key>
+	<string>http://comtradegram.com</string>
+	<key>InstagramClientId</key>
+	<string>ffb6938d0a934d56b10d0b11debef5a8</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

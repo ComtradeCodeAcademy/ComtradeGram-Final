@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SwiftInstagram
 
 class HomePageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    var instagramPosts: [InstagramMedia] = []
     let cellSpacingHeight: CGFloat = 5
 
    private func loadSamplePosts() {
@@ -28,8 +30,7 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         guard let post1 = Post(profileImage: profile1, username: "tijanaTitja",  location: "Belgrade, Serbia", postImage: postImg1, content: "Hello, World!") else {
             fatalError("Unible to instantiate post1")
         }
-    
-    
+
         guard let post2 = Post(profileImage: profile2, username: "vekishh",  location: "Belgrade, Serbia", postImage: postImg2, content: "Hik hik") else {
             fatalError("Unible to instantiate post2")
         }
@@ -44,15 +45,17 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadSamplePosts()
-        
+//        loadSamplePosts()
     }
 
-  
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.loadPosts()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,7 +63,7 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return instagramPosts.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,14 +72,15 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
             fatalError("The dequeued cell is not an instance of HomePageTableViewCell.")
         }
         
-        let post = posts[indexPath.row]
+        let post = instagramPosts[indexPath.row]
         
-        cell.nameLabel.text = post.username
-        cell.prfileImageView.image = post.profileImage
-        cell.locationLabel.text = post.location
-        cell.postPhotoImageView.image = post.postImage
-        cell.contentTextView.text = post.content
-        
+        cell.nameLabel.text = post.user.username
+
+        cell.prfileImageView.downloadedFrom(url: post.user.profilePicture)
+        cell.locationLabel.text = post.location?.name
+        cell.postPhotoImageView.downloadedFrom(url: post.images.standardResolution.url, contentMode: .scaleAspectFill)
+        cell.contentTextView.text = post.caption?.text
+
         cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
         cell.layer.borderWidth = 5;
@@ -148,7 +152,20 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         print("share post")
     }
     
-    
-    
+    // MARK: - Loading posts from Instagram
+    func loadPosts(){
+
+        Instagram.shared.recentMedia(fromUser: "self", count: 5, success: { mediaList in
+
+            self.instagramPosts = mediaList
+            self.tableView.reloadData()
+
+            return
+        }, failure: { error in
+            print(error.localizedDescription)
+        })
+
+    }
+
 }
 

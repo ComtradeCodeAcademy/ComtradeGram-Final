@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lga-rK-jx3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rkU-XG-gvi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-ip-2bx">
-                                <rect key="frame" x="10" y="64" width="355" height="603"/>
+                                <rect key="frame" x="10" y="20" width="355" height="647"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="350" id="Arj-eC-gJZ" customClass="HomePageTableViewCell" customModule="ComtradeGramFinal" customModuleProvider="target">
@@ -323,7 +323,7 @@
         <!--FavoriteVC-->
         <scene sceneID="CtI-4b-89P">
             <objects>
-                <viewController id="qqx-2i-0e7" customClass="FavoriteVC" customModule="SearchVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qqx-2i-0e7" customClass="FavoriteVC" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NWC-kU-zaO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,7 +339,7 @@
         <!--PhotoVC-->
         <scene sceneID="egn-eH-kJD">
             <objects>
-                <viewController id="tGT-17-9zi" customClass="PhotoVC" customModule="SearchVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tGT-17-9zi" customClass="PhotoVC" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="89u-8n-ZYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,7 +355,7 @@
         <!--DISCOVER-->
         <scene sceneID="3R6-Tv-qgG">
             <objects>
-                <viewController storyboardIdentifier="home1" id="G7y-xM-DfN" customClass="SearchVC" customModule="SearchVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home1" id="G7y-xM-DfN" customClass="SearchVC" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="z2X-Ys-kv1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,7 +366,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92549019610000005" green="0.1058823529" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="215" id="a9V-VH-RAw" customClass="SearchTableViewCell" customModule="SearchVC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="215" id="a9V-VH-RAw" customClass="SearchTableViewCell" customModule="ComtradeGramFinal" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="355" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a9V-VH-RAw" id="MmH-GZ-72a">
@@ -528,7 +528,7 @@
         <!--HomeVC-->
         <scene sceneID="ib3-tj-BfB">
             <objects>
-                <viewController id="wwF-9C-O6I" customClass="HomeVC" customModule="SearchVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wwF-9C-O6I" customClass="HomeVC" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="RZJ-pL-8nZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,12 +542,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41O-6Q-jQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2270" y="-299"/>
+            <point key="canvasLocation" x="2608.8000000000002" y="-299.10044977511245"/>
         </scene>
         <!--My ProfileVC-->
         <scene sceneID="vIa-K3-eJF">
             <objects>
-                <viewController id="gqx-pr-nPk" customClass="MyProfileVC" customModule="SearchVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gqx-pr-nPk" customClass="MyProfileVC" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G51-47-Wma">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,7 +574,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0m-tM-5Ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1388" y="-299"/>
+            <point key="canvasLocation" x="1727.2" y="-299.10044977511245"/>
         </scene>
         <!--NavigationSearch Controller-->
         <scene sceneID="OFA-pl-gwn">
@@ -593,6 +593,68 @@
             </objects>
             <point key="canvasLocation" x="1706" y="481"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="82G-3D-kRR">
+            <objects>
+                <viewController id="Frg-Sp-00v" customClass="LoginViewController" customModule="ComtradeGramFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfe-1Y-UhC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jedais" translatesAutoresizingMaskIntoConstraints="NO" id="iZ2-0g-Btd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9h8-Xa-EpZ">
+                                <rect key="frame" x="137" y="321" width="100" height="44"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="h9I-mb-iz5"/>
+                                    <constraint firstAttribute="width" constant="100" id="r2R-3q-mBV"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="submitLogin" destination="Frg-Sp-00v" eventType="touchUpInside" id="cvJ-2i-cmD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iZ2-0g-Btd" firstAttribute="top" secondItem="QGX-S9-yFt" secondAttribute="top" id="DFd-zm-VIQ"/>
+                            <constraint firstItem="iZ2-0g-Btd" firstAttribute="trailing" secondItem="QGX-S9-yFt" secondAttribute="trailing" id="FtK-cN-kGM"/>
+                            <constraint firstItem="QGX-S9-yFt" firstAttribute="bottom" secondItem="iZ2-0g-Btd" secondAttribute="bottom" id="H48-QX-eJA"/>
+                            <constraint firstItem="9h8-Xa-EpZ" firstAttribute="centerX" secondItem="QGX-S9-yFt" secondAttribute="centerX" id="UyY-JH-SSW"/>
+                            <constraint firstItem="9h8-Xa-EpZ" firstAttribute="centerY" secondItem="QGX-S9-yFt" secondAttribute="centerY" id="o42-aG-ZHK"/>
+                            <constraint firstItem="iZ2-0g-Btd" firstAttribute="leading" secondItem="QGX-S9-yFt" secondAttribute="leading" id="vNK-4V-bWZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QGX-S9-yFt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fsj-QN-zQ9"/>
+                    <connections>
+                        <outlet property="loginBttn" destination="9h8-Xa-EpZ" id="7Ua-7i-65U"/>
+                        <segue destination="zdQ-WZ-L1n" kind="modal" identifier="openDashboard" modalTransitionStyle="crossDissolve" id="gy7-5T-wSz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eg3-LM-bNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="-800.14992503748135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zci-UD-vq2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rkU-XG-gvi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xgd-Ts-4Qr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Frg-Sp-00v" kind="relationship" relationship="rootViewController" id="nMf-tm-aJ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWm-4j-pXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="-800"/>
+        </scene>
     </scenes>
     <resources>
         <image name="BCk" width="23" height="23"/>
@@ -605,6 +667,7 @@
         <image name="comment" width="75" height="60"/>
         <image name="favorites" width="32" height="32"/>
         <image name="home1" width="32" height="32"/>
+        <image name="jedais" width="1440" height="1440"/>
         <image name="like" width="60" height="53"/>
         <image name="location" width="34" height="39"/>
         <image name="makica" width="664" height="790"/>
@@ -613,4 +676,7 @@
         <image name="search" width="32" height="32"/>
         <image name="share" width="58" height="57"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gy7-5T-wSz"/>
+    </inferredMetricsTieBreakers>
 </document>
