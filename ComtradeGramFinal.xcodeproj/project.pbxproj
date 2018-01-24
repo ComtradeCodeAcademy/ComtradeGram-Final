@@ -116,6 +116,7 @@
 				071E5FD320165A22001B8FE6 /* HomePageViewController.swift */,
 				C903283D201674BD00F210D0 /* ProfileImgApiViewController.swift */,
 				071E5FD220165A22001B8FE6 /* Post.swift */,
+				C1B0CB312016731D00B48D24 /* ViewControllers */,
 				073C19492006891100F7816E /* Main.storyboard */,
 				073C194F2006891100F7816E /* Assets.xcassets */,
 				073C19512006891100F7816E /* LaunchScreen.storyboard */,
@@ -251,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073C19532006891100F7816E /* LaunchScreen.storyboard in Resources */,
+				C1B0CB322016731D00B48D24 /* ViewControllers in Resources */,
 				073C19502006891100F7816E /* Assets.xcassets in Resources */,
 				073C194B2006891100F7816E /* Main.storyboard in Resources */,
 			);
@@ -285,6 +287,7 @@
 				073C19462006891100F7816E /* AppDelegate.swift in Sources */,
 				071E5FD620165A23001B8FE6 /* HomePageViewController.swift in Sources */,
 				071E5FD520165A23001B8FE6 /* Post.swift in Sources */,
+				C1B0CB342016745000B48D24 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43E5B5CSA6;
+				DEVELOPMENT_TEAM = 4NCJS82G4A;
 				INFOPLIST_FILE = ComtradeGramFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Comtrade.ComtradeGramFinal;
@@ -466,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43E5B5CSA6;
+				DEVELOPMENT_TEAM = 4NCJS82G4A;
 				INFOPLIST_FILE = ComtradeGramFinal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Comtrade.ComtradeGramFinal;

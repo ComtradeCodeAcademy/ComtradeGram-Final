@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -438,8 +439,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BCk" width="23" height="23"/>
+        <image name="Malta" width="1280" height="800"/>
+        <image name="Malta1" width="1100" height="471"/>
+        <image name="Malta2" width="640" height="480"/>
         <image name="PostImage1" width="1440" height="1440"/>
         <image name="ProfileImage1" width="1079" height="1081"/>
+        <image name="addfriend" width="66" height="58"/>
         <image name="comment" width="75" height="60"/>
         <image name="dm" width="48" height="43"/>
         <image name="like" width="60" height="53"/>
