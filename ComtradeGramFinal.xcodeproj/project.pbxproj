@@ -22,6 +22,8 @@
 		0784C4DB2019196F000E942E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784C4DA2019196F000E942E /* UIImageView.swift */; };
 		90C2055B863CC46A8EC5F904 /* Pods_ComtradeGramFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6CDDB43799CA87D77C0B2 /* Pods_ComtradeGramFinalTests.framework */; };
 		B2DB6D372B1B2596201149ED /* Pods_ComtradeGramFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */; };
+		C1B0CB44201A764200B48D24 /* ViewControllers in Resources */ = {isa = PBXBuildFile; fileRef = C1B0CB43201A764200B48D24 /* ViewControllers */; };
+		C1B0CB48201A774F00B48D24 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0CB47201A774F00B48D24 /* SearchTableViewCell.swift */; };
 		EB1FCA11AEBC2E7CA61E80C9 /* Pods_ComtradeGramFinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5972BEBF5F29AFF33D431699 /* Pods_ComtradeGramFinalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		8591CE3B545E3747D8D0F9FB /* Pods-ComtradeGramFinalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalTests/Pods-ComtradeGramFinalTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CAB271CD111DF6FF66E1E89 /* Pods-ComtradeGramFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinal/Pods-ComtradeGramFinal.release.xcconfig"; sourceTree = "<group>"; };
 		A3A5C9D7385833C8A86AED69 /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1B0CB43201A764200B48D24 /* ViewControllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewControllers; sourceTree = "<group>"; };
+		C1B0CB47201A774F00B48D24 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		C8497E9560F46BE726082DDE /* Pods-ComtradeGramFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,7 +134,9 @@
 				073C19452006891100F7816E /* AppDelegate.swift */,
 				073C19472006891100F7816E /* ViewController.swift */,
 				071E5FD82018F667001B8FE6 /* LoginViewController.swift */,
+				C1B0CB47201A774F00B48D24 /* SearchTableViewCell.swift */,
 				071E5FD420165A23001B8FE6 /* HomePageTableViewCell.swift */,
+				C1B0CB43201A764200B48D24 /* ViewControllers */,
 				071E5FD320165A22001B8FE6 /* HomePageViewController.swift */,
 				071E5FD220165A22001B8FE6 /* Post.swift */,
 				073C19492006891100F7816E /* Main.storyboard */,
@@ -308,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073C19532006891100F7816E /* LaunchScreen.storyboard in Resources */,
+				C1B0CB44201A764200B48D24 /* ViewControllers in Resources */,
 				073C19502006891100F7816E /* Assets.xcassets in Resources */,
 				073C194B2006891100F7816E /* Main.storyboard in Resources */,
 			);
@@ -484,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B0CB48201A774F00B48D24 /* SearchTableViewCell.swift in Sources */,
 				0784C4DB2019196F000E942E /* UIImageView.swift in Sources */,
 				073C19482006891100F7816E /* ViewController.swift in Sources */,
 				071E5FD720165A23001B8FE6 /* HomePageTableViewCell.swift in Sources */,
