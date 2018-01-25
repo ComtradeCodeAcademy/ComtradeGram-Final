@@ -1,0 +1,6 @@
+framework module Pods_ComtradeGramFinalUITests {
+  umbrella header "Pods-ComtradeGramFinalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
