@@ -7,6 +7,7 @@
 // 
 import UIKit
 
+
 class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
     
     let posts = [1,2,3,4,5,6,7,8]
@@ -20,8 +21,8 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        parseData()
-        
+//        parseData()
+
       view.backgroundColor = UIColor.red
         
         searchBar.barTintColor = UIColor.white
@@ -36,34 +37,34 @@ class SearchVC: UIViewController, UITableViewDelegate, UITableViewDataSource,UIS
        
     }
     
-    func parseData (){
+    //func parseData (){
         
-        let url = "https://restcountries.eu/rest/v1/all"
-        var request = URLRequest(url:URL(string:url)!)
-        request.httpMethod = "GET"
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration:configuration,delegate:nil,delegateQueue: OperationQueue.main)
+        //let url = "https://restcountries.eu/rest/v1/all"
+        //var request = URLRequest(url:URL(string:url)!)
+        //request.httpMethod = "GET"
+        //let configuration = URLSessionConfiguration.default
+        //let session = URLSession(configuration:configuration,delegate:nil,delegateQueue: OperationQueue.main)
         
-        let task = session.dataTask(with: request){(data,response,error) in
-            if (error != nil){
-        print("Error")
-            }
-            else{
+       // let task = session.dataTask(with: request){(data,response,error) in
+            //if (error != nil){
+       // print("Error")
+           // }
+           // else{
                 
-                do{
-                    let fetchedData = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSArray
-                }
-                catch  {
+             //   do{
+                  //  let fetchedData = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSArray
+              //  }
+                //catch  {
                     
-                    print("Error2")
-                }
-            }
+                //    print("Error2")
+             //  }
+          //  }
             
             
             
-        }
-        task.resume()
-    }
+       // }
+      //  task.resume()
+   // }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
