@@ -218,7 +218,7 @@
                                                         <constraint firstAttribute="height" constant="14" id="uF5-uk-7s0"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEN-6v-ht1" userLabel="locationButton">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEN-6v-ht1" userLabel="locationButton">
                                                     <rect key="frame" x="80" y="37" width="150" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="Ya6-vB-0eR"/>
@@ -381,7 +381,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fromupnorth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-6h-wcG" userLabel="locationLbl">
-                                                    <rect key="frame" x="63" y="24" width="3565" height="15"/>
+                                                    <rect key="frame" x="63" y="24" width="90" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="LBx-Sr-yHA"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="foL-ka-DlU"/>
@@ -391,7 +391,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmn-y3-7Bq" userLabel="locationBttn">
-                                                    <rect key="frame" x="63" y="44" width="100" height="15"/>
+                                                    <rect key="frame" x="63" y="44" width="3575" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="hUV-3A-Wta"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="yhF-0d-zXz"/>

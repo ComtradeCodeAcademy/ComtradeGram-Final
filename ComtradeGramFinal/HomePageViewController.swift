@@ -86,6 +86,14 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         cell.layer.borderWidth = 5;
         cell.layer.borderColor = UIColor.init(red:236/255.0, green:27/255.0, blue:46/255.0, alpha: 1.0).cgColor
 
+        cell.likeBtn.isSelected = post.userHasLiked ? true : false
+
+        if post.userHasLiked == true {
+            cell.likeBtn.isSelected = true
+        }else{
+            cell.likeBtn.isSelected = false
+        }
+
         return cell
     }
     
@@ -167,5 +175,13 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
 
     }
 
+    func likeOrDislike(_ sender: UIButton){
+        let isLiked = sender.isSelected
+
+        sender.isSelected = !isLiked
+
+        // call api, here you are POST ID and new status
+        let newStatus = !isLiked // :: sender.isSelected
+    }
 }
 
