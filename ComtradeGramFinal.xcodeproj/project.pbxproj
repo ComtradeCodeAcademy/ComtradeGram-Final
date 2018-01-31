@@ -22,6 +22,7 @@
 		0784C4DB2019196F000E942E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784C4DA2019196F000E942E /* UIImageView.swift */; };
 		90C2055B863CC46A8EC5F904 /* Pods_ComtradeGramFinalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6CDDB43799CA87D77C0B2 /* Pods_ComtradeGramFinalTests.framework */; };
 		B2DB6D372B1B2596201149ED /* Pods_ComtradeGramFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */; };
+		C9501DA120212F3200FA6040 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9501DA020212F3200FA6040 /* LikeViewController.swift */; };
 		EB1FCA11AEBC2E7CA61E80C9 /* Pods_ComtradeGramFinalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5972BEBF5F29AFF33D431699 /* Pods_ComtradeGramFinalUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		9CAB271CD111DF6FF66E1E89 /* Pods-ComtradeGramFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinal/Pods-ComtradeGramFinal.release.xcconfig"; sourceTree = "<group>"; };
 		A3A5C9D7385833C8A86AED69 /* Pods-ComtradeGramFinalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8497E9560F46BE726082DDE /* Pods-ComtradeGramFinalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComtradeGramFinalUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComtradeGramFinalUITests/Pods-ComtradeGramFinalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9501DA020212F3200FA6040 /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		DA36AD9161F49952F5BD6D08 /* Pods_ComtradeGramFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComtradeGramFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				0784C4DA2019196F000E942E /* UIImageView.swift */,
+				C9501DA020212F3200FA6040 /* LikeViewController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				0784C4DB2019196F000E942E /* UIImageView.swift in Sources */,
 				073C19482006891100F7816E /* ViewController.swift in Sources */,
+				C9501DA120212F3200FA6040 /* LikeViewController.swift in Sources */,
 				071E5FD720165A23001B8FE6 /* HomePageTableViewCell.swift in Sources */,
 				073C194E2006891100F7816E /* ComtradeGramFinal.xcdatamodeld in Sources */,
 				073C19462006891100F7816E /* AppDelegate.swift in Sources */,

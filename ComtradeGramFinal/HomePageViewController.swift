@@ -16,6 +16,7 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
     var posts = [Post]()
     var instagramPosts: [InstagramMedia] = []
     let cellSpacingHeight: CGFloat = 5
+    //var likes: [InstagramMedia] = []
 
    private func loadSamplePosts() {
         
@@ -80,19 +81,22 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         cell.locationLabel.text = post.location?.name
         cell.postPhotoImageView.downloadedFrom(url: post.images.standardResolution.url, contentMode: .scaleAspectFill)
         cell.contentTextView.text = post.caption?.text
-
+        cell.likeLbl.text = String(post.likes.count)
+       
         cell.layer.cornerRadius = 10
         cell.clipsToBounds = true
         cell.layer.borderWidth = 5;
         cell.layer.borderColor = UIColor.init(red:236/255.0, green:27/255.0, blue:46/255.0, alpha: 1.0).cgColor
 
-        cell.likeBtn.isSelected = post.userHasLiked ? true : false
+        //cell.likeBtn.isSelected = post.userHasLiked ? true : false
 
         if post.userHasLiked == true {
             cell.likeBtn.isSelected = true
         }else{
             cell.likeBtn.isSelected = false
         }
+        
+        cell.likeBtn.tag = indexPath.row
 
         return cell
     }
@@ -148,8 +152,14 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
         print("open share")
     }
     
-    @IBAction func addLike(_ sender: Any) {
-        print("add like")
+    @IBAction func addLike(_ sender: UIButton) {
+        
+        let isLiked = sender.isSelected
+        sender.isSelected = !isLiked
+        // call api, here you are POST ID and new status
+        let newStatus = !isLiked // :: sender.isSelected
+        
+        
     }
     
     @IBAction func addComment(_ sender: Any) {
@@ -175,13 +185,22 @@ class HomePageViewController: UIViewController, UITableViewDelegate, UITableView
 
     }
 
-    func likeOrDislike(_ sender: UIButton){
-        let isLiked = sender.isSelected
-
-        sender.isSelected = !isLiked
-
-        // call api, here you are POST ID and new status
-        let newStatus = !isLiked // :: sender.isSelected
-    }
+//    func loadLike(){
+//
+//        let apiLikes: [InstagramMedia] = []
+//
+//        Instagram.shared.likes(inMedia: self., success: apiLikes, in , failure: <#T##Instagram.FailureHandler?##Instagram.FailureHandler?##(Error) -> Void#>)
+//
+    
+   // }
+//    func likeOrDislike(_ sender: UIButton){
+//
+//        let isLiked = sender.isSelected
+//
+//        sender.isSelected = !isLiked
+//
+//        // call api, here you are POST ID and new status
+//        let newStatus = !isLiked // :: sender.isSelected
+    //}
 }
 

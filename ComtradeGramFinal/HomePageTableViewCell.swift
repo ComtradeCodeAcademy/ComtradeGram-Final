@@ -23,7 +23,8 @@ class HomePageTableViewCell: UITableViewCell {
     @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var commentBtn: UIButton!
     @IBOutlet weak var shareBtn: UIButton!
-    @IBOutlet weak var datePostLabel: UILabel!
+    @IBOutlet weak var datePostLabel: UILabel!    
+    @IBOutlet weak var likeLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
